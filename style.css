@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: hsl(303, 10%, 53%);
+    max-width: 63%;
+    min-height: 70%;
+}
+
+.top{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.title{
+    max-width: 45%;
+    margin-right: 1rem;
+}
+
+.title h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.title p{
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-right: 1rem;
+}
+
+.ratings{
+    min-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.rtn-1, .rtn-2, .rtn-3{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    min-width: 80%;
+    min-height: 3rem;
+    border-radius: 5px;
+}
+
+.stars{
+    width: 35%;
+}
+
+.rtn-1{
+    align-self: flex-start;
+}
+
+.rtn-2{
+    align-self: center;
+}
+
+.rtn-3{
+    align-self: flex-end;
+}
+
+.ratings img{
+    padding: 1%;
+}
+
+.ratings h4{
+    padding-left: 10%;
+}
+
+.bottom{
+    padding: 1rem 2rem;
+    max-width: 100%;
+    min-height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-1, .review-2, .review-3{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    padding: 1.9rem;
+    max-width: 32%;
+    min-height: 75%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review-1{
+    align-self: flex-start;
+}
+
+.review-2{
+    align-self: center;
+}
+
+.review-3{
+    align-self: end;
+}
+
+.wrap{
+    padding-left: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ewrap{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.ewrap img{
+    border-radius: 50%;
+    max-width: 20%;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.bottom p{
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.type{
+    font-size: 1rem;
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 750px) {
+    main{
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .top{
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .title{
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .stars{
+        width: 100%;
+        display: block;
+        padding-bottom: 0.4rem;
+    }
+
+    .ratings{
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+    .rtn-1, .rtn-2, .rtn-3{
+        padding: 1rem 0rem;
+        display: block;
+        align-self: center;
+        min-width: 100%;
+    }
+
+    .bottom{
+        display: block;
+    }
+
+    .review-1, .review-2, .review-3{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
